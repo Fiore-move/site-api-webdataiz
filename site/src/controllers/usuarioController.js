@@ -65,18 +65,36 @@ function cadastrar(req, res) {
     var nome = req.body.nomeServer;
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
+    var nomeFant = req.body.nomeFantServer;
+    var repetirSenha = req.body.repetirSenhaServer;
+    var cnpj = req.body.cnpjServer;
+    var cep = req.body.cepServer;
+    var represent = req.body.representServer;
+    var cpf = req.body.cpfServer;
 
     // Faça as validações dos valores
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
     } else if (email == undefined) {
         res.status(400).send("Seu email está undefined!");
-    } else if (senha == undefined) {
-        res.status(400).send("Sua senha está undefined!");
-    } else {
+    } else if (senha == undefined || senha != repetirSenha) {
+        res.status(400).send("Sua senha está undefined ou a senha precisa estar igual ao repetir senha");
+    } else if(cnpj == undefined) {
+        res.status(400).send("Seu  CNPJ está undefined!");
+    }else if(nomeFant == undefined) {
+        res.status(400).send("Seu nome fantasia está undefined!");
+    }else if(cep == undefined) {
+        res.status(400).send("Seu CEP está undefined!");
+    }else if(represent == undefined) {
+        res.status(400).send("Seu representante está undefined!");
+    }else if(cpf == undefined) {
+        res.status(400).send("Seu CPF do representante está undefined!");
+    }else{
+
+    
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nome, email, senha)
+        usuarioModel.cadastrar(nome, email, senha, nomeFant, cnpj, cep, represent, cpf)
             .then(
                 function (resultado) {
                     res.json(resultado);

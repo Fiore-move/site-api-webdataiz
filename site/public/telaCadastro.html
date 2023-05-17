@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../imagens/LOGO.png" type="image/x-icon">
 </head>
 <link rel="stylesheet" href="../Css_fiore/telaCadastro.css">
+<script src="./funcoes.js"></script>
 <body>
    <div class="container">
 
@@ -26,7 +27,7 @@
   
 <div class="transparente">
 <div style="display: flex;justify-content: space-evenly;margin-top: auto;">
-<a href="../Html/FIORESITE.html"><img width="200px" src="../imagens/LOGO.png" alt=""></a></div><br><br>
+<a href="./index.html"><img width="200px" src="../imagens/LOGO.png" alt=""></a></div><br><br>
 <div class="EscritaFiore">Fiore</div>
 
 </div>
@@ -36,12 +37,11 @@
     <span class="Escrita" >Representante</span>
     <input class="inputCadastro" placeholder="nome do representante" type="text" id="ipt_represent"><br>
     <input class="inputCadastro" id="ipt_cpf" placeholder="CPF"><br>
-    <div class="button"><button onclick="cadastrar()" class="inputCadastro">Cadastrar</button></div>
+    <button onclick="cadastrar()">Cadastrar</button></div>
 
-  
+<div id="div_msg"></div>  
 </body>
 </html>
-
 <script>
   function cadastrar() {
       //aguardar();
@@ -63,6 +63,7 @@
         cepVar == "" || representVar == "" || cpfVar == "") {
          // cardErro.style.display = "block"
          // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+         div_msg.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
 
           finalizarAguardar();
           return false;
@@ -96,20 +97,21 @@
           if (resposta.ok) {
             //   cardErro.style.display = "block";
 
-            //   mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+               div_msg.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
 
               setTimeout(() => {
-                  window.location = "telaLogin.html";
+                  window.location = "./telaLogin.html";
               }, "2000")
 
-              limparFormulario();
-              finalizarAguardar();
+             // limparFormulario();
+           //   finalizarAguardar();
           } else {
-              throw ("Houve um erro ao tentar realizar o cadastro!");
+            div_msg.innerHTML = `"Houve um erro ao tentar realizar o cadastro!"`;
+              // throw ("Houve um erro ao tentar realizar o cadastro!");
           }
       }).catch(function (resposta) {
           console.log(`#ERRO: ${resposta}`);
-          finalizarAguardar();
+         // finalizarAguardar();
       });
 
       return false;
