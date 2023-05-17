@@ -1,0 +1,67 @@
+
+.body{
+    align-items: center;
+    justify-content: center;
+}
+
+.mychart1{
+    left: 30px;
+}
+
+.mychart2{
+    left: 10px
+}
+
+.container{
+    width: auto;
+    border: 50px solid transparent;
+    display: flex;
+    justify-content:CENTER;
+    height: auto;
+    align-items: justify;
+}
+
+.caixa {
+    width: 1200px;
+    height: 400px;
+    display: block;
+    background-color: #c1c1e9;
+    border: 1px solid #000000;
+    margin: 50px;
+    display: block;
+    border-radius: 60px;
+    box-shadow: 3px 3px 9px black;
+
+}
+
+.navbarchart{
+    background-color: #ffdbd7;
+    padding: 10px 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(82, 81, 81);
+    border-radius: 30px;
+}
+
+.link{
+    color:rgb(76, 68, 68);
+    
+}
+
+.graficos{
+    align-items: center;
+    display: flex;
+    padding: 10px 50px;
+    gap: 80px;
+}
+
+.caixaTexto{
+    color: rgb(82, 81, 81);
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+
+
+}

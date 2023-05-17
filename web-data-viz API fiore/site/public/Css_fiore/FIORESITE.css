@@ -1,0 +1,192 @@
+body {
+    background-color: #ffdbd7;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.empresa {
+    border-top: 3px solid #414141;
+    justify-content: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    color: #000000;
+    width: 75%;
+    display: flex;
+    margin: auto;
+}
+
+.projeto {
+    border-top: 3px solid #414141;
+    justify-content: start;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #000000;
+    width: 30%;
+    display: flex;
+    margin: auto;
+}
+
+.titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: #414141;
+    margin-top: 14px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.header {
+    border-top: 3px solid #ffdbd7;
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style-position: outside;
+    color: #000000;
+    width: 600px;
+    align-items: center;
+}
+
+.Serviços {
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: #000000;
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+
+.letrasS {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #414141;
+}
+
+.sobreNOS {
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: #000000;
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+
+.letrasSobre {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #414141;
+    width: 50%;
+}
+
+.Nossos {
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: #000000;
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+
+.letrasNOSSOS {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #414141;
+    text-align: center;
+}
+
+.contato {
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: #000000;
+    width: 95%;
+    display: flex;
+    margin: auto;
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    justify-content: center;
+    background-color: #ee9589;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: #414141;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.button:active {
+    color: white;
+    box-shadow: 0 0.2rem #ee9589;
+    transform: translateY(0.2rem);
+}
+
+.button:hover:not(:disabled) {
+    background: #ffffff;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.button:disabled {
+    cursor: auto;
+    color: #000000;
+}
+
+.nossosValoresCAIXA {
+    width: 300px;
+    height: 90%;
+    display: flex;
+    background-color: #e4e4e4;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    margin-right: auto;
+}
+
+.nossosValoresCAIXA2 {
+    width: 300px;
+    height: 90%;
+    display: flex;
+    background-color: #e4e4e4;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+.nossosValoresCAIXA3 {
+    width: 375px;
+    height: 90%;
+    display: flex;
+    background-color: #e4e4e4;
+    border: 1px solid #000000;
+    margin-left: auto;
+    border-radius: 30px;
+}
+
+button a{
+    text-decoration: none;
+    color: #000000;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro Fiore</title>
+    <link rel="shortcut icon" href="../imagens/LOGO.png" type="image/x-icon">
+</head>
+<link rel="stylesheet" href="../Css_fiore/telaCadastro.css">
+<body>
+   <div class="container">
+
+  <div class="caixaCadastro">
+
+    <span class="Escrita">Empresa</span>
+    <input class="inputCadastro" id="ipt_nome" placeholder="nome da empresa"><br>
+    <input class="inputCadastro" id="ipt_nomeFant" placeholder="nome fantasia"><br>
+    <input class="inputCadastro" id="ipt_email" placeholder="email"><br>
+    <input class="inputCadastro" type="password" id="ipt_senha" placeholder="senha"><br>
+    <input class="inputCadastro" type="password" id="ipt_repetirSenha" placeholder="repita a senha"><br>
+    <input class="inputCadastro" id="ipt_cnpj" placeholder="CNPJ"><br>
+    <input class="inputCadastro" id="ipt_cep" placeholder="CEP"><br>
+
+  </div>
+  
+<div class="transparente">
+<div style="display: flex;justify-content: space-evenly;margin-top: auto;">
+<a href="../Html/FIORESITE.html"><img width="200px" src="../imagens/LOGO.png" alt=""></a></div><br><br>
+<div class="EscritaFiore">Fiore</div>
+
+</div>
+
+  <div class="caixaCadastro">
+
+    <span class="Escrita" >Representante</span>
+    <input class="inputCadastro" placeholder="nome do representante" type="text" id="ipt_represent"><br>
+    <input class="inputCadastro" id="ipt_cpf" placeholder="CPF"><br>
+    <div class="button"><button onclick="cadastrar()" class="inputCadastro">Cadastrar</button></div>
+
+  
+</body>
+</html>
+
+<script>
+  function cadastrar() {
+      //aguardar();
+
+      //Recupere o valor da nova input pelo nome do id
+      // Agora vá para o método fetch logo abaixo
+      var nomeVar = ipt_nome.value;
+      var emailVar = ipt_email.value;
+      var nomeFantVar = ipt_nomeFant.value;
+      var senhaVar = ipt_senha.value;
+      var repetirSenhaVar = ipt_repetirSenha.value;
+      var cnpjVar = ipt_cnpj.value;
+      var cepVar = ipt_cep.value;
+      var representVar = ipt_represent.value;
+      var cpfVar  = ipt_cpf.value;
+
+      if (nomeVar == "" || emailVar == "" || nomeFantVar == "" ||
+       senhaVar == "" || repetirSenhaVar == "" || cnpjVar == "" ||
+        cepVar == "" || representVar == "" || cpfVar == "") {
+         // cardErro.style.display = "block"
+         // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+
+          finalizarAguardar();
+          return false;
+      }
+    //   else {
+    //       setInterval(sumirMensagem, 5000)
+    //   }
+
+      // Enviando o valor da nova input
+      fetch("/usuarios/cadastrar", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+              // crie um atributo que recebe o valor recuperado aqui
+              // Agora vá para o arquivo routes/usuario.js
+              nomeServer: nomeVar,
+              emailServer: emailVar,
+              nomeFantServer: nomeFantVar,
+              senhaServer: senhaVar,
+              cnpjServer:cnpjVar,
+              cepServer:cepVar,
+              representServer: representVar,
+              cpfServer: cpfVar
+          })
+      }).then(function (resposta) {
+
+          console.log("resposta: ", resposta);
+
+          if (resposta.ok) {
+            //   cardErro.style.display = "block";
+
+            //   mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+              setTimeout(() => {
+                  window.location = "telaLogin.html";
+              }, "2000")
+
+              limparFormulario();
+              finalizarAguardar();
+          } else {
+              throw ("Houve um erro ao tentar realizar o cadastro!");
+          }
+      }).catch(function (resposta) {
+          console.log(`#ERRO: ${resposta}`);
+          finalizarAguardar();
+      });
+
+      return false;
+  }
+
+//   function sumirMensagem() {
+//       cardErro.style.display = "none"
+//   }
+
+</script>

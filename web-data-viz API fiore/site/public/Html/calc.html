@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+    <link rel="stylesheet" href="../Css_fiore/calc.css">
+    <link rel="shortcut icon" href="../imagens/LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+       <a href="../Html/FIORESITE.html"> <img height="50px" width="50px" src="../imagens/LOGO.png" alt="" ></a>
+        
+    </header>
+    <main class="flex-center">
+        <div id="comparativo" class="boxes invisible">
+            <div id="contratoNao" class="texto">
+            </div>
+        </div>
+        <div class="boxes flex-center">
+            <div class="containerDosInputs">
+                <div class="inputBox">
+                    <select id="peso">
+                        <option>kg</option>
+                        <option>ton</option>
+                        <option>g</option>
+                    </select>
+                    <input id="pesoTransp" placeholder="peso transportado/ano" type="number">
+                </div>
+                <div class="inputBox">
+                    <select id="dinheiro">
+                        <option>R$</option>
+                    </select>
+                    <input id="lucroPorPeso" placeholder="lucro por quilo" type="number">
+                </div>
+                <div class="buttonBox">
+                    <button onclick="calc()">Calcular Perdas e Lucros!</button>
+                </div>
+            </div>
+        </div> 
+        <div id="comparativo" class="boxes invisible">
+            <div id="contratoSim" class="texto">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="f6techlogo.png" alt="">
+    </footer>
+</body>
+<script src="../JV_fiore/calculadora.js"></script>
+</html>
