@@ -43,7 +43,7 @@
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+            //finalizarAguardar();
             return false;
         }
         else {
@@ -99,7 +99,7 @@
         return false;
     }
 
-    function sumirMensagem() {
+        function sumirMensagem() {
         cardErro.style.display = "none"
     }
 
