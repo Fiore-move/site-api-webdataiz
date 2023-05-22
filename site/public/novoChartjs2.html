@@ -168,7 +168,7 @@
     //     Para ajustar o "select", ajuste o comando sql em src/models
     function atualizarGrafico(idSensor, dados, myChart) {
 
-
+         console.log(`Esse é o idsensor${idSensor},dados${dados},mycha`);
 
         fetch(`/medidas/tempo-real/${idSensor}`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
@@ -179,13 +179,13 @@
                     console.log(dados);
 
                     let avisoCaptura = document.getElementById(`avisoCaptura${idSensor}`)
-                    avisoCaptura.innerHTML = ""
+                    // avisoCaptura.innerHTML = ""
 
 
                     if (novoRegistro[0].momento_grafico == dados.labels[dados.labels.length - 1]) {
                         console.log("---------------------------------------------------------------")
                         console.log("Como não há dados novos para captura, o gráfico não atualizará.")
-                        avisoCaptura.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> Foi trazido o dado mais atual capturado pelo sensor. <br> Como não há dados novos a exibir, o gráfico não atualizará."
+// avisoCaptura.innerHTML = "<i class='fa-solid fa-triangle-exclamation'></i> Foi trazido o dado mais atual capturado pelo sensor. <br> Como não há dados novos a exibir, o gráfico não atualizará."
                         console.log("Horário do novo dado capturado:")
                         console.log(novoRegistro[0].momento_grafico)
                         console.log("Horário do último dado capturado:")
@@ -215,8 +215,11 @@
             }
         })
             .catch(function (error) {
-                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+     
+               console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    
             });
 
     }
+    setInterval( atualizarGrafico(),5000)
 </script>
