@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="shortcut icon" href="." type="image/x-icon" />
-  </head>
-  <link rel="stylesheet" href="./Css_fiore/telaLogin.css" />
-  <script src="../"></script>
 
-  <body>
-    <div class="container">
-      <div class="caixaCadastro">
-        <span class="Escrita">Login</span>
-        <input class="inputCadastro" id="ipt_email" placeholder="email" /><br />
-        <input
-          class="inputCadastro"
-          type="password"
-          id="ipt_senha"
-          placeholder="senha"
-        /><br />
-        <div class="button">
-          <button onclick="entrar()" class="inputCadastro">Login</button>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="shortcut icon" href="." type="image/x-icon">
+</head>
+<link rel="stylesheet" href="./Css_fiore/telaLogin.css">
+<!-- <script src="../"></script> -->
 
-      <div class="transparente">
-        <div style="display: flex; justify-content: space-evenly; margin: auto">
-          <a href="./index.html"
-            ><img width="200px" src="./imagens/LOGO.png" alt=""
-          /></a>
-        </div>
-        <br /><br />
-        <div class="EscritaFiore">Fiore</div>
 
-        <div id="div_mensagem"></div>
+<body>
+  <div class="container">
+    <div class="caixaCadastro">
+      <span class="Escrita">Login</span>
+      <input class="inputCadastro" id="ipt_email" placeholder="email"><br>
+      <input class="inputCadastro" type="password" id="ipt_senha" placeholder="senha"><br>
+      <div class="button">
+        <button onclick="entrar()" class="inputCadastro">Login</button>
       </div>
     </div>
-  </body>
+
+    <div class="transparente">
+      <div style="display: flex; justify-content: space-evenly; margin: auto">
+        <a href="./index.html"><img width="200px" src="./imagens/LOGO.png" alt=""></a>
+      </div>
+      <br><br>
+      <div class="EscritaFiore">Fiore</div>
+
+      <div id="div_mensagem"></div>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <script>
@@ -55,7 +51,7 @@
       //finalizarAguardar();
       return false;
     } else {
-      setInterval(sumirMensagem, 5000);
+      // setInterval(sumirMensagem, 5000);
     }
 
     console.log("FORM LOGIN: ", emailVar);
