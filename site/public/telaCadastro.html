@@ -58,7 +58,7 @@
       var representVar = ipt_represent.value;
       var cpfVar  = ipt_cpf.value;
 
-      if (nomeVar == "" || emailVar == "" || nomeFantVar == "" ||
+      if (nomeVar == "" ||  nomeFantVar == "" || emailVar == "" ||
        senhaVar == "" || repetirSenhaVar == "" || cnpjVar == "" ||
         cepVar == "" || representVar == "" || cpfVar == "") {
          // cardErro.style.display = "block"
@@ -68,9 +68,9 @@
           finalizarAguardar();
           return false;
       }
-    //   else {
-    //       setInterval(sumirMensagem, 5000)
-    //   }
+      else {
+          setInterval(sumirMensagem, 5000)
+      }
 
       // Enviando o valor da nova input
       fetch("/usuarios/cadastrar", {
@@ -118,8 +118,8 @@
       return false;
   }
 
-//   function sumirMensagem() {
-//       cardErro.style.display = "none"
-//   }
+  function sumirMensagem() {
+      cardErro.style.display = "none"
+  }
 
 </script>

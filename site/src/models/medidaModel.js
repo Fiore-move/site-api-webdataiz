@@ -19,7 +19,7 @@ function buscarUltimasMedidas(idSensor, limite_linhas) {
                     umidade,
                     dtHora
                     from sensor where fkEmpresa = ${idSensor}
-                    order by idSensor desc limit ${limite_linhas}`;
+                    order by idSensor desc limit 7;`
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
         return
@@ -49,7 +49,7 @@ function buscarMedidasEmTempoReal(idSensor) {
                     dtHora, 
                     fkEmpresa 
                     from sensor where fkEmpresa = ${idSensor}
-                    order by idSensor desc limit 1`;
+                    order by idSensor desc limit 1;`
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
         return
