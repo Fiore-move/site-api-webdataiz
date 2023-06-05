@@ -2,7 +2,7 @@ let titulo = document.querySelector('h1')
 let instrucoes = document.querySelector('#instrucoes')
 let aviso = document.querySelector('#aviso')
 //let respostaEsta = document.querySelector('#respostaEsta')
-let pontos = 0 // pontos para o placar
+let pontos = 0// pontos para o placar
 let placar = 0 // placar
 
 // PERGUNTA
@@ -136,7 +136,7 @@ function verificarSeAcertou(nQuestao, resposta) {
     if(respostaEscolhida == certa) {
         //console.log("Acertou")
         //respostaEsta.textContent = "Correta 😊"
-        pontos += 10 // pontos = pontos + 10
+        pontos += 20 // pontos = pontos + 10
     } else {
         //console.log("Errou!")
         //respostaEsta.textContent = "Errada 😢"
@@ -144,7 +144,7 @@ function verificarSeAcertou(nQuestao, resposta) {
 
     // atualizar placar
     placar = pontos
-    instrucoes.textContent = "Pontos " + placar
+    instrucoes.textContent = "Pontos " + placar + "%"
 
     // bloquear a escolha de opcoes
     bloquearAlternativas()
@@ -170,9 +170,9 @@ function fimDoJogo() {
     let pont = ''
     pontos == 0 ? pont = 'ponto' : pont = 'pontos'
 
-    pergunta.textContent   = "Você conseguiu " + pontos + " " + pont
+    pergunta.textContent   = "Você conseguiu " + pontos + "%" + " " + pont 
 
-    aviso.textContent = "Você conseguiu " + pontos + " " + pont
+    aviso.textContent = "Você conseguiu " + pontos + "%" + " " + pont
 
     a.textContent = ""
     b.textContent = ""

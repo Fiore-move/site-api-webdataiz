@@ -1,0 +1,72 @@
+.navbar{
+    background-image: linear-gradient(to right, #fab0de 50px , #baf7ff);
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.usuario_caixa{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to left, aquamarine, rgba(19, 19, 94, 0.445));
+    height: 600px;
+    width: 300px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imagens{
+    padding-top: 90px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.tudo{
+    display: flex;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.myChart{
+    height: 500px;
+    width: 500px;
+    padding-left: 30px;
+    padding-top: 100px;
+    color:rgb(255, 255, 255);
+    
+}
+
+.div_caixa{
+    color: aquamarine;
+}
+
+#myChart{
+    background-color: rgba(106, 16, 180, 0.589);
+    color: antiquewhite;
+    border-radius: 30px;
+}
+
+.div_analytics{
+    align-items: center;
+    text-align: start;
+    padding-top: 30px;
+    padding-left: 30px;
+    background-color: aqua;
+    height: 200px;
+    width: 600px;
+    border-radius: 50px;
+    border: 3px solid rgb(62, 11, 92);
+    margin-top: 110px;
+}

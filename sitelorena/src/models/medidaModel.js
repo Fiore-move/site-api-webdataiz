@@ -42,14 +42,14 @@ function buscarMedidasEmTempoReal(idSensor) {
                         from medida where fk_aquario = ${idSensor} 
                     order by id desc`;
 
-    } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
-        instrucaoSql = `select 
-                    temperatura, 
-                    umidade,
-                    dtHora, 
-                    fkEmpresa 
-                    from sensor where fkEmpresa = ${idSensor}
-                    order by idSensor desc limit 1;`
+    // } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
+    //     instrucaoSql = `select 
+    //                 temperatura, 
+    //                 umidade,
+    //                 dtHora, 
+    //                 fkEmpresa 
+    //                 from sensor where fkEmpresa = ${idSensor}
+    //                 order by idSensor desc limit 1;`
     } else {
         console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
         return
