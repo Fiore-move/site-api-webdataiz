@@ -1,0 +1,74 @@
+.navbar{
+    background-image: linear-gradient(to right, #fab0de 50px , #baf7ff);
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.caixadelogin{
+    display: flex;
+
+}
+
+.container{
+    height: 300px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f6ddea;
+    border-radius: 50px;
+    border: 10px solid #732ea1;
+
+}
+
+.esquerda{
+    margin-top: 150px;
+    margin-left: 50px;
+    padding-left: 100px;
+}
+
+.direita{
+    margin-top: 150px;
+    margin-right: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.inp_nome{
+    border: 0;
+    border-radius: 100px;
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.inp_nome:focus{
+    outline-color: #eb7cb5;
+}
+
+.inp_senha{
+    border: 0;
+    border-radius: 100px;
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.inp_senha:focus{
+    outline-color: #eb7bb5;
+}
+
+.button{
+    border: 0;
+    border-radius: 100px;
+    width: 100px;
+}
+
+.button:focus{
+    outline-color: #eb7bb5;
+}

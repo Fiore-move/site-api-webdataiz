@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANÇAS</title>
+    <link rel="stylesheet" href="./dashboard/dancacss.css">
+</head>
+<body>
+
+
+    <nav>
+        <img src="./imagens/bailarinaplie.png" width="80px">
+        <div class="link">
+            <a href="./index.html"><img src="./imagens/home.png" width="50px"></a>
+            <a href="./login.html"><img src="./imagens/login.png" width="50px"></a>
+        </div>
+        <div>
+            <a href="./quiz.html" style="text-decoration: none; color: black;">QUIZ DE DANÇA</a>
+            <a href="./comoéoprocesso.html" style="text-decoration: none; color: black; padding-left: 20px;">COMO É O
+                PROCESSO</a>
+        </div>
+    </nav>
+        <img src="./imagens/DANÇAS.png" width="300px" style="padding-left: 500px;">
+    <div class="botoes">
+    <button class="botao" onclick="BALLET()">
+        BALLET
+    </button>
+    <div id="aparecer_ballete"></div>
+    
+
+    <button class="botao" onclick="CONTEMP()">
+        CONTEMPORÂNEO
+    </button>
+    <div id="aparecer_contemp"></div>
+
+    <button class="botao" onclick="GE()">
+        GINASTICA ESTÉTICA
+    </button>
+    <div id="aparecer_contemp"></div>
+
+    <button class="botao" onclick="GR()">
+        GINASTICA RITMICA
+    </button>
+    <div id="aparecer_contemp"></div>
+
+    <button class="botao" onclick="ESP()">
+        ESPONTÂNEO
+    </button>
+</div>
+<div id="aparecer_ballet"></div>
+<br>
+<br>    
+
+<!-- <img src="./imagens/ginasticaritmica.jpg"> -->
+
+</body>
+</html>
+<script>
+function BALLET() {
+    aparecer_ballet.innerHTML = `
+        <div class="conteudo_danças"> 
+            <img src="./imagens/ballet.jpg" width="300px" style="border-radius: 20px;">
+
+            <div class="texto">
+                <h1 style="font-weight: 900;">BALLET</h1>
+                <p>No ballet existem 4 tipos, o romântico, o
+                clássico, o contemporânea e o neoclássico,
+                e dentro deles, há vários estilos cada um. Mas o foco principal é como funciona o ballet que todos
+                conhecem.
+                O ballet em si, é composto por um corpo de baile, onde todos precisam estar completamente alinhados,
+                disciplinados e focados.
+                Precisam tem controle extremo do corpo e uma flexibilidade e agilidade excelentes, não pode ter erro
+                nisso.
+                Entretanto, quando um bailarino está a muito tempo exercendo essa arte, a física começa a ficar a seu
+                favor.
+                Os saltos dos bailarinos são os mais impecáveis pois eles sabem como trabalhar a lógica corporal e eles
+                ficam cada vez mais excelentes no que fazem.
+                Mas não se engane,<br>
+                são muitos anos de treinos sem parar, sem faltar e com muita dedicação e disciplina.</p>
+            </div>
+        </div>`
+}
+
+function CONTEMP() {
+    aparecer_ballet.innerHTML = `
+        <div class="conteudo_danças"> 
+            <img src="./imagens/contemporaneo.jpg" width="300px" style="border-radius: 20px;">
+
+            <div class="texto">
+                <h1 style="font-weight: 900;">CONTEMPORÂNEO</h1>
+                <p>A dança contemporânea não é um estilo em específico. 
+            É mais um teatro com reações corporais e expressões faciais. 
+            A bailarina recebe uma música, cena, ou momento em que ela precisa expor com o corpo como ela se sentiu.
+            Há movimentos sujos que demonstram tristeza, raiva, depressão, ansiedade, negação e outros que são transmitidos 
+            por movimentos mais curtos, em nível baixo ou médio (que são os níveis de passos no chão, e os médios são passos com os pés no chão, eles não saem).
+            Para movimentos limpos, é usado nível médio e aéreo, onde se expressa alegria, paz, tranquilidade com passos completos, bem abertos e bem expressivos. 
+            Normalmente eles são representados por pulos, saltos, piruetas e passos extremamente largos..</p>
+            </div>
+        </div>`
+}
+
+function GE() {
+    aparecer_ballet.innerHTML = `
+        <div class="conteudo_danças"> 
+            <img src="./imagens/ginasticaestetica.jpg" width="300px" style="border-radius: 20px;">
+
+            <div class="texto">
+                <h1 style="font-weight: 900;">GINASTICA ESTÉTICA</h1>
+                <p>A ginástica estética é composta por um grupo de pessoas altamente treinadas para trabalhar com as maiores <br>
+                ferramentas do corpo, força e flexibilidade. Elas podem ser competitivas ou não. Mas de todos os jeitos, <br>
+                precisa ser super alinhado com toda a equipe. <br>
+                A GE normalmente é usada com a ginástica rítmica, onde se é usado arcos, fitas, cordas e muitos aparelhos..</p>
+            </div>
+        </div>`
+}
+
+function GR() {
+    aparecer_ballet.innerHTML = `
+        <div class="conteudo_danças"> 
+            <img src="./imagens/ginasticaritmica.jpg"" width="300px" style="border-radius: 20px;">
+
+            <div class="texto">
+                <h1 style="font-weight: 900;">GINÁSTICA RÍTMICA</h1>
+                <p>A ginástica rítmica é um tipo de ginástica desenvolvida com movimentos corporais baseados nos elementos do balé e da dança teatral, <br>
+                numa mistura de arte, criatividade e capacidade física, onde a execução é realizada em sincronia com a música. <br>
+                Pode ser dançado por uma ou mais pessoas, mas sempre havendo troca de aparelhos durante a dança. Se caso for uma competição, <br>
+                se o aparelho cair ou ficar parado por 3 segundos, você perde pontos e até pode ser desclassificado.</p>
+            </div>
+        </div>`
+}
+
+function ESP() {
+    aparecer_ballet.innerHTML = `
+        <div class="conteudo_danças"> 
+            <img src="./imagens/dançaespontanea.jpg" width="300px" style="border-radius: 20px;">
+
+            <div class="texto">
+                <h1 style="font-weight: 900;">ESPONTÂNEO</h1>
+                <p>A dança espontânea é uma mistura de todas acima. Ela é emoção, técnica, postura, flexibilidade, paixão e elementos. Normalmente é usada para danças em igrejas. É uma dança que não tem regras, não tem tipos e não tem especificações. São considerado os passos conforme a música e as palavras que ela diz, e então com o corpo se desenha e se expressa o que a música está dizendo. Em alguns casos, é chamado de "dança com o Espírito Santo", pois os passos podem trazer cura para as pessoas pelo bailarino expressar exatamente como é a sensação de uma pessoa que está na igreja naquele momento. Quase sempre, são passos que salvam as almas da escuridão.</p>
+            </div>
+        </div>`
+}
+
+</script>

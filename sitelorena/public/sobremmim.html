@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBRE MIM</title>
+    <link rel="stylesheet" href="./css/sobremim.css">
+    <link rel="shortcut icon" href="./imagens/bailainaespacate.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="section">
+        <header>
+            <img src="./imagens/bailainaespacate.png" width="80px">
+            <div>
+                <a href="./login.html" style="text-decoration: none;"><img src="./imagens/login.png"
+                        width="50px"> </a>
+                <a href="./index.html"><img src="./imagens/home.png" width="50px"> </a>
+            </div>
+            <a href="./porqueeudanço.html" style="text-decoration: none; color: black;"> POR QUE EU DANÇO?</a>
+        </header>
+
+        <img class="sobremim" src="./imagens/sobremim.png" width="500px">
+
+        <span style="display: flex; align-items: center; padding-left: 45%; padding-top: 200px; "><button class="buttao"
+                onclick="ver_curiosidades()">Conhecer a Lorena! </button></span>
+        <br>
+    </section>
+
+    <section class="section1">
+        <div id="div_conteiner1">
+        </div>
+
+    </section>
+
+    <section class="section2">
+
+    </section>
+</body>
+
+</html>
+<script>
+    var um = ` <div class="container1">
+        <br>
+            <img class="foto1" src="./imagens/dançando na igreja.jpg" width="250px"><br>
+            Hoje em dia eu danço na igreja,<br>
+                aplico todas as danças juntas de <br>
+                forma dinâmica.
+                Apresentei danças que <br>
+                tocaram o coração das pessoas,<br>
+                elas choravam...sentiam a dança...<br>
+            </div>`;
+
+    var dois = `<div class="container3">
+            <br>
+            <img class="foto1" src="./imagens/espacate no ar.jpg" width="250px"><br>
+            Eu amo fazer coisas difíceis,<br>
+            na dança, o que era mais difícil <br>
+            era o que eu mais me empenhava a fazer.<br>   
+            Sempre fui muito flexível, então<br>
+            quase sempre eu dominava o que eu queria.<br><br>
+            </div>`;
+
+    var tres =`<div class="container2">
+                <br>
+                <img class="foto1" src="./imagens/recebendo a medalha.jpg" width="250px"><br>
+                Eu amava competir em GR<br>
+                a sensação de trabalho concluido <br>
+                é sem igual...
+                O frio na barriga nunca passa, <br>
+                mas a sensção de ter lutado e chegado ao fim,<br>
+                é insuperável!<br>
+                </div>`;
+
+    var quatro =`<div class="container4">
+            <br>
+            <img class="foto1" src="./imagens/lorena no parque.jpg" width="250px"><br>
+            <bR>
+            Em todos os cantos que eu vou,<br>
+            eu faço um passo diferente para fotos. <br>
+            Pode ser no lugar mais restrito,<br>
+            lá está sorrindo e elástica.<br>
+            </div>`;
+
+    var cinco =`<div class="container5">
+                 <br>
+                 <img class="foto1" src="./imagens/na paulista.jpg" width="250px"><br>
+                 Houve uma época que eu era professora<br>
+                 dos babys. Eu ensinava, GR, GE e ballet.<bR>
+                 Era apaixonante ver as crianças tão pequenas<br>
+                 conseguindo dar um mortal ou um giro perfeito.<br>
+                 </div>`;
+
+        var seis = `<div class="container6">
+                    <br>
+                    <img class="foto1" src="./imagens/nao é fácil.jpg" width="250px"><br>
+                    Eu amo a complexidade da dança...<br>
+                    Muitas das vezes o corpo não aguenta mais,<bR>
+                    mas eu me apaixonei pela dor de dançar! <br>
+                    Eu amo a sensação de satisfação<br>
+                    depois de tentar muito e conseguir.<bR>
+                    </div>`;
+
+
+
+
+    function ver_curiosidades() {
+        var vt_containers = [um, dois, tres, quatro, cinco, seis];
+        var contador = 0;
+        var aleatorio = 0;
+
+        while (contador <= vt_containers.length - 1) {
+            aleatorio = parseInt(Math.random() * 5 + 1)
+            div_conteiner1.innerHTML += `${vt_containers[aleatorio]}`
+            contador++
+        }
+    }
+</script>

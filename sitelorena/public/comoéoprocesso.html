@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMO É PROCESSO</title>
+    <link rel="stylesheet" href="./css/comoéopocesso.css">
+</head>
+
+<body>
+    <section class="section1">
+        <header>
+            <nav>
+                <img src="./imagens/espacate no ar.png" width="50px">
+                <div>
+                    <a href="./login.html"><img src="./imagens/login.png" width="40px"></a>
+                    <a href="./index.html"><img src="./imagens/home.png" width="40px"></a>
+                </div>
+            </nav>
+        </header>
+
+        <img src="./imagens/bailainaespacate.png" width="100px" style="padding-left: 250px;">
+
+        <img src="./imagens/comoéo processo.png" width="600px" style="padding-top: 50px;">
+
+        <img src="./imagens/bailainaespacate.png" width="100px">
+        <div class="div_dos_botoes">
+            <button class="botoes" onclick="fase1()"> FASE DO 1º AMOR </button>
+            <button class="botoes" onclick="fase2()"> FASE DO ESFORÇO </button>
+            <button class="botoes" onclick="fase3()"> FASE DA PAIXÃO </button>
+
+            <div class="class_botao">
+                <h1>Coloque de 1 á 3: </h1>
+                <input id="inp_valores" style="display: flex; border-radius: 40px; border: 
+        solid rgb(107, 210, 236) 2px; height: 50px; width: 70px; background-color: 
+        aquamarine; padding: 0 10px;">
+            </div>
+
+            <div style="padding-left: 80px;" class="div_input" id="div_inp"></div>
+        </div>
+    </section>
+
+    <section class="section2">`
+
+        <div style="padding-top: 200px;" id="mensagem"></div>
+        <div style="padding-top: 50px;" id="mensagem2"></div>
+        <div style="padding-top: 50px;" id="mensagem3"></div>
+
+    </section>
+</body>
+
+</html>
+<script>
+    var input = Number(inp_valores.value)
+
+    function fase1() {
+        var valor_input = Number(inp_valores.value);
+
+        mensagem.innerHTML = ""
+
+        if (valor_input == 1) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+        <img class="imagem1" src="./imagens/lorenapequena.jpg" width="300px" style="border-radius: 50px;"> 
+        <span class="legenda_foto">Quando você começa, tudo é facil... <br>A sensação de estar vivendo algo novo é muito bom!<br>
+            O primerio espacate, o primeiro plie, o primeiro salto... <br> O friozinho na barriga de estar indo a uma apresentação...
+        </span> 
+        </div>`
+        } else if (valor_input == 2) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+        <img class="imagem1" src="./imagens/lorenapequena.jpg" width="300px" style="border-radius: 50px;"> 
+        <span class="legenda_foto">Quando você começa, tudo é facil... <br>A sensação de estar vivendo algo novo é muito bom!<br>
+            O primerio espacate, o primeiro plie, o primeiro salto... <br> O friozinho na barriga de estar indo a uma apresentação...
+        </span> 
+        </div>
+        <div class="div2" style="padding-top: 50px;">
+            <img class="imagem2" src="./imagens/lorenapequena2.jpg" width="300px" style="border-radius: 50px;"> 
+            <span class="legenda_foto2">Ao passar do tempo tudo é novo e incrível... <br>Você descobre que quanto mais forçar o seu corpo<br>
+            mais flexivel ele fica, e até se torna bom descobrir que <br> você pode fazer o que nem imagina com o corpo. <br> Todas as aulas de ballet são contadas e você fica ansiosa pela prôxima...
+            </span> 
+            </div>`
+        } else if (valor_input == 3) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+        <img class="imagem1" src="./imagens/lorenapequena.jpg" width="300px" style="border-radius: 50px;"> 
+        <span class="legenda_foto">Quando você começa, tudo é facil... <br>A sensação de estar vivendo algo novo é muito bom!<br>
+            O primerio espacate, o primeiro plie, o primeiro salto... <br> O friozinho na barriga de estar indo a uma apresentação...
+        </span> 
+        </div>
+             <div class="div2" style="padding-top: 50px;">
+            <img class="imagem2" src="./imagens/lorenapequena2.jpg" width="300px" style="border-radius: 50px;"> 
+            <span class="legenda_foto2">Ao passar do tempo tudo é novo e incrível... <br>Você descobre que quanto mais forçar o seu corpo<br>
+            mais flexivel ele fica, e até se torna bom descobrir que <br> você pode fazer o que nem imagina com o corpo. <br> Todas as aulas de ballet são contadas e você fica ansiosa pela prôxima...
+            </span> 
+            </div>
+                <div class="div3" style="padding-top: 50px;">
+                <img class="imagem3" src="./imagens/lorenacomcaradeatentada.jpg" width="300px" style="border-radius: 50px;"> 
+                <span class="legenda_foto3">O seu corpo se desenvolve e você quer ser como as grandes. <br>Você se apaixona cada vez mais pela dança e por ballet...<br>
+                Veste sua primeira sapatilha de ponta, seu primeiro tutu... <br> Passa por todas as sensações que te faz amar dançar.<br>
+                </span> `
+        } else {
+            alert("Só pode números até três!")
+        }
+
+    }
+
+    function fase2() {
+        var valor_input = Number(inp_valores.value);
+
+        mensagem.innerHTML = ""
+
+
+        if (valor_input == 1) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+        <img class="imagem1" src="./imagens/musculação.jpg" width="300px" style="border-radius: 50px;"> 
+        <span class="legenda_foto">Aqui você já precisa de uma condição
+             <br>fisíca muito boa. Você começa a comparar sua estatura corporal<br>
+            e quase sempre não parece ser sufuciente.
+              <br> E então você treina e treina mais...
+        </span> 
+        </div>`
+        } else if (valor_input == 2) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+        <img class="imagem1" src="./imagens/musculação.jpg" width="300px" style="border-radius: 50px;"> 
+        <span class="legenda_foto">Aqui você já precisa de uma condição
+             <br>fisíca muito boa. Você começa a comparar sua estatura corporal<br>
+            e quase sempre não parece ser sufuciente.
+              <br> E então você treina e treina mais...
+        </span> 
+        </div>
+             <div class="div2" style="padding-top: 50px;">
+            <img class="imagem2" src="./imagens/lorenaaquecendo.jpg" width="300px" style="border-radius: 50px;"> 
+            <span class="legenda_foto2">Você descobre  que quando era pequena seu corpo era muito flexível
+                <br>mas quando você cresce, as juntas começam a endurecer e você começa a tentar forçar mais.<br>
+            </span> 
+            </div>`
+        } else if (valor_input == 3) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+        <img class="imagem1" src="./imagens/musculação.jpg" width="300px" style="border-radius: 50px;"> 
+        <span class="legenda_foto">Aqui você já precisa de uma condição
+             <br>fisíca muito boa. Você começa a comparar sua estatura corporal<br>
+            e quase sempre não parece ser sufuciente.
+              <br> E então você treina e treina mais...
+        </span> 
+        </div>
+             <div class="div2" style="padding-top: 50px;">
+            <img class="imagem2" src="./imagens/lorenaaquecendo.jpg" width="300px" style="border-radius: 50px;"> 
+            <span class="legenda_foto2">Você descobre  que quando era pequena seu corpo era muito flexível
+                <br>mas quando você cresce, <bR>as juntas começam a endurecer e você começa a tentar forçar mais.<br>
+            </span> 
+            </div>
+                <div class="div3" style="padding-top: 50px;">
+                <img class="imagem3" src="./imagens/lorenacomfita.jpg" width="300px" style="border-radius: 50px;"> 
+                <span class="legenda_foto3">Algumas coisas você até sabe fazer,
+                    <br>mas você sempre está se comparando e isso te mata por dentro...<br>
+                Mesmo assim, desistir nunca é a opção. Você se torna mais forte a cada minuto que passa.
+                </span> `
+        } else {
+            alert("Só pode números até três!")
+        }
+
+    }
+
+    function fase3() {
+        var valor_input = Number(inp_valores.value);
+
+        mensagem.innerHTML = ""
+
+
+        if (valor_input == 1) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+<img class="imagem1" src="./imagens/paixao.jpg" width="300px" style="border-radius: 50px;"> 
+<span class="legenda_foto">Mas ao fim, quando os ensaios já encheram <br>
+     a mente e você acha que não sabe mais nada <br>
+     Você apresenta... e você fica tão apaixonado por aquela <Br>
+     sensação que não onsegue se ver em outro lugar.<br>
+    Aquilo arde no seu coração...<br> 
+</span> 
+</div>`
+        } else if (valor_input == 2) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+<img class="imagem1" src="./imagens/paixao.jpg" width="300px" style="border-radius: 50px;"> 
+<span class="legenda_foto">Mas ao fim, quando os ensaios já encheram <br>
+     a mente e você acha que não sabe mais nada <br>
+     Você apresenta... e você fica tão apaixonado por aquela <Br>
+     sensação que não onsegue se ver em outro lugar.<br>
+    Aquilo arde no seu coração...<br> 
+</span> 
+</div>
+ <div class="div2" style="padding-top: 50px;">
+<img class="imagem2" src="./imagens/dançanachurch.jpg" width="300px" style="border-radius: 50px;"> 
+<span class="legenda_foto2">Você conhece pessoas nesse tempo que fazem valer a pena. <br>
+Tudo fica mais divertido e cada coisa faz sentido e te motiva mais.<br>
+Pessoas são a chave para um bom processo de aprendizagem no caminho.
+</span> 
+</div>`
+        } else if (valor_input == 3) {
+            mensagem.innerHTML = `<div class="div1" style="padding-top: 200px;">
+<img class="imagem1" src="./imagens/paixao.jpg" width="300px" style="border-radius: 50px;"> 
+<span class="legenda_foto">Mas ao fim, quando os ensaios já encheram <br>
+     a mente e você acha que não sabe mais nada <br>
+     Você apresenta... e você fica tão apaixonado por aquela <Br>
+     sensação que não onsegue se ver em outro lugar.<br>
+    Aquilo arde no seu coração...<br> 
+</span> 
+</div>
+ <div class="div2" style="padding-top: 50px;">
+<img class="imagem2" src="./imagens/dançanachurch.jpg" width="300px" style="border-radius: 50px;"> 
+<span class="legenda_foto2">Você conhece pessoas nesse tempo que fazem valer a pena. <br>
+Tudo fica mais divertido e cada coisa faz sentido e te motiva mais.<br>
+Pessoas são a chave para um bom processo de aprendizagem no caminho.
+</span> 
+</div>
+    <div class="div3" style="padding-top: 50px;">
+    <img class="imagem3" src="./imagens/recebendo a medalha.jpg" width="300px" style="border-radius: 50px;"> 
+    <span class="legenda_foto">A cada dança tem um processo, e cada processo ensina algo.
+    <br>Quando acaba esse processo, fica um gosto de que valeu a pena...<br>
+    Você até deseja passar por tudo de novo, foi horrível, 
+    <br>mas a vitória no fim, é muito boa, e te faz querer mais depois. Você fica apaixonada mais ainda. <br> 
+    
+    </span> `
+        } else {
+            alert("Só pode números até três!")
+        }
+
+
+    }
+</script>

@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    justify-content: center;
+
+}
+
+#card{
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    transition: all .8s;
+    border-radius: 10px;
+}
+
+.face{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+}
+
+
+#front{
+    background-color: rgb(62, 209, 209);
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+#back{
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}

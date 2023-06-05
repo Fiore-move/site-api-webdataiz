@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRAR</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <a href="./index.html"><img src="./imagens/home.png" width="50px"> </a>
+            <a href="./login.html"><img src="./imagens/login.png" width="50px"> </a>
+        </nav>
+        <br><bR>
+            <div class="div_principal">
+    <div class="container">
+    <h1>
+        <img class="textoimagem" src="./imagens/façacadastro.png" width="250px">
+        <p> Venha saber mais! </p>
+        <p><a href="./index.html"><img src="./imagens/bailainaespacate.png" width="200px"></a></p>
+    </h1>
+    <div class="container">
+    <div class="direita">
+        NOME:<BR>
+        <input class="inp_1" id="nome_input"><bR><br>
+        SABER MAIS SOBRE:<BR>
+        <select class="inp_1">
+            <option value="#"> opções... </option>
+            <option value="gr"> GINASTICA RITMICA </option>
+            <option value="ge"> GINASTICA ESTÉTICA </option>
+            <option value="ballet"> BALLET </option>
+            <option value="contemporaneo"> CONTEMPORÂNEO </option>
+        </select><bR><br>
+
+    </div>
+
+    <div class="esquerda">
+        EMAIL:<BR>
+        <input class="inp_1" id="email_input"><bR><br>
+        SENHA:<BR>
+        <input class="inp_1" id="senha_input"><bR><br>
+        CONFIRMAÇÃO DE SENHA:<BR>
+        <input class="inp_1" id="confirmacao_senha_input"><bR><br>
+        <bR>
+        <br>
+        <button class="button" onclick="cadastrar()"> ENVIAR </button>
+    </div>
+    </div>
+
+    <div class="posição_button">
+    </div>
+    </div>
+</div>
+</section>
+</body>
+</html>
+<script>
+    function cadastrar() {
+        // aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var repetirSenhaVar = confirmacao_senha_input.value;
+        
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || repetirSenhaVar == "") {
+            // cardErro.style.display = "block"
+            alert("Mensagem de erro para todos os campos em branco");
+
+            // finalizarAguardar();
+            return false;
+        }
+        else {
+            // setInterval(sumirMensagem, 5000)
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                // cardErro.style.display = "block";
+
+                alert("Cadastro realizado com sucesso! Redirecionando para tela de Login...");
+
+                setTimeout(() => {
+                    window.location = "./login.html";
+                }, "2000")
+
+                // limparFormulario();
+                // finalizarAguardar();
+            } else {
+               alert("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            // finalizarAguardar();
+        });
+
+        return false;
+    }}
+
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
+
+</script>

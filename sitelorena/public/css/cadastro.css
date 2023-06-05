@@ -1,0 +1,83 @@
+@import url(https://fonts.google.com/specimen/Abril+Fatface?preview.text=Nome%20&preview.text_type=custom);
+
+section{
+    height: 100vw;
+    width: 100vw;
+    align-items: center;
+    justify-self: center;
+}
+
+nav{
+    background-image: linear-gradient(to right, #f6ceca, aquamarine );
+    display: flex;
+    justify-content: center;
+    
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: linear-gradient(to top , white, rgba(20, 153, 109, 0.815));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+
+h1{
+    width: 500px;
+    align-items: center;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.349);
+    border-radius: 50px;
+    border: solid white 2px;
+    width: 900px;
+    height: 500px;
+    justify-content: center;
+    color: white;
+}
+
+.direita{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    pad: 10px;
+}
+
+.esquerda{
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.posição_button{
+    align-items: center;
+    position: relative;
+}
+
+.inp_1{
+    border-radius: 40px;
+    border: solid transparent;
+}
+
+.button{
+    border-radius: 40px;
+    border: solid transparent;
+    width: 100px;
+    height: 50px;
+   
+}
+
+.div_principal{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

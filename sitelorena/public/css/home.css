@@ -1,0 +1,219 @@
+.tudo{
+    background-image: linear-gradient(to right, #00ad87 50%,#1f5fa8);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #00ad87 50%,#1f5fa8);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 15px;
+    border-bottom: 2px white solid;
+    margin: auto;
+}
+
+.titulo{
+    margin: auto;
+    border: #004aad;
+    border-radius: to fixed rgb(250, 250, 250) 10px;
+    border-bottom: 2px white solid;
+
+}
+
+.titulotexto{
+    display: flex;
+    font-family: tan system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  ;
+    color: #eaff82;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: #80cc28;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    
+}
+
+.caixa{
+    display: flex; 
+    color: rgb(96, 170, 189);
+    margin-top: -100px;
+}
+
+.direita{
+    margin-top: 150px;
+    margin-right: 1x;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.esquerda{
+    margin-top: 150px;
+    margin-left: 100px;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.botao1{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+      background-image: linear-gradient(to left, #7af59f 50px , #3a29888e);
+    border-radius: 50px;
+    padding: 0 10px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao2{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+      background-image: linear-gradient(to left, #7af59f 50px , #3a29888e);
+    border-radius: 50px;
+    padding: 0 10px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.botao3{
+    text-decoration: none;
+    color: rgb(7, 7, 6);
+    font-size: 30px;
+      background-image: linear-gradient(to left, #7af59f 50px , #3a29888e);
+    border-radius: 50px;
+    padding: 0 10px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.botao4{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+      background-image: linear-gradient(to left, #7af59f 50px , #3a29888e);
+    border-radius: 50px;
+    padding: 0 10px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.botao5{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    background-image: linear-gradient(to left, #7af59f 50px , #3a29888e);
+    border-radius: 50px;
+    padding: 0 10px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.botao6{
+    text-decoration: none;
+    color: rgb(2, 2, 1);
+    font-size: 30px;
+      background-image: linear-gradient(to left, #7af59f 50px , #3a29888e);
+    border-radius: 50px;
+    padding: 0 10px;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.tela2{
+    margin-top: 150px;
+}
+
+.text2{
+    background-color: #eaff82;
+    align-items: center;
+    display: flex;
+    border-radius: 70px;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-family: josefin sans 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1050px;
+    margin-left: 150px;
+    height: 160px;
+
+}
+
+.fotos{
+    margin-top: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.fotos .legenda img{
+    width: 300px;
+    height: 300px;
+}
+
+.foto{
+    border-radius: 50px;
+    border: solid #80cc28 5px;
+}
+/* 
+.foto{
+    border-radius: 50px;
+    border: solid #80cc28 5px;
+}
+
+.foto{
+    border-radius: 50px;
+    border: solid #80cc28 5px;
+} */
+
+.footer{
+    background-image: linear-gradient(to right, #302eb8 50px , #8f77c9);
+    margin-bottom: -100px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    display:flex;
+    padding-left: 40%;
+
+}
+
+.legenda{
+    justify-content: end;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
